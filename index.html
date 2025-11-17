@@ -6,7 +6,7 @@
 
     <link
       rel="shortcut icon"
-      href="assets/img/favicon.png"
+      href="assets/img/traumaneurologobg.jpg"
       type="image/x-icon"
     />
     <link
@@ -15,7 +15,10 @@
       crossorigin=""
     />
     <link rel="stylesheet" href="assets/css/styles.css" />
-
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
     <title>Trauma Neuro Institute of South Africa</title>
   </head>
   <body>
@@ -23,7 +26,12 @@
     <header class="header" id="header">
       <nav class="nav container">
         <a href="#" class="nav__logo">
-          <span class="nav__logo-circle">T</span>
+          <span class="nav__logo-circle">
+            <img
+              src="assets/img/traumaneurologobg.jpg"
+              alt="image"
+              class="home__img"
+          /></span>
           <span class="nav__logo-name">TNISA</span>
         </a>
 
@@ -41,6 +49,10 @@
             </li>
 
             <li class="nav__item">
+              <a href="#services" class="nav__link">Services</a>
+            </li>
+
+            <li class="nav__item">
               <a href="#projects" class="nav__link">Programs</a>
             </li>
 
@@ -54,12 +66,12 @@
           </div>
         </div>
 
-        <!-- <div class="nav__buttons">
-          <i class="ri-moon-line change-theme" id="theme-button"></i>
+        <div class="nav__buttons">
+          <!-- <i class="ri-moon-line change-theme" id="theme-button"></i> -->
           <div class="nav__toggle" id="nav-toggle">
             <i class="ri-menu-4-line"></i>
           </div>
-        </div> -->
+        </div>
       </nav>
     </header>
 
@@ -73,12 +85,12 @@
           <div class="home__perfil">
             <div class="home__image">
               <img
-                src="assets/img/tnisa.jpg"
+                src="assets/img/traumaneuro_logo.jpeg"
                 alt="image"
                 class="home__img"
               />
               <div class="home__shadow"></div>
-              <img
+              <!-- <img
                 src="assets/img/curved-arrow.svg"
                 alt=""
                 class="home__arrow"
@@ -87,8 +99,8 @@
                 src="assets/img/random-lines.svg"
                 alt=""
                 class="home__line"
-              />
-              <div class="geometric-box"></div>
+              /> 
+              <div class="geometric-box"></div> -->
             </div>
 
             <div class="home__social">
@@ -113,11 +125,11 @@
               neuro-inclusive practice globally.
             </p>
 
-            <a href="#about" class="home__scroll">
+            <a href="#services" class="home__scroll">
               <div class="home__scroll-box">
                 <i class="ri-arrow-down-s-line"></i>
               </div>
-              <span class="home__scroll-text">Explore Our Work</span>
+              <span class="home__scroll-text">Explore Our Services</span>
             </a>
           </div>
         </div>
@@ -133,17 +145,17 @@
           <div class="about__perfil">
             <div class="about__image">
               <img
-                src="assets/img/tnisa.jpg"
+                src="assets/img/traumaneurologobg.jpg"
                 alt="image"
                 class="about__img"
               />
-              <div class="about__shadow"></div>
-              <div class="geometric-box"></div>
-              <img
+              <!-- <div class="about__shadow"></div> -->
+              <!-- <div class="geometric-box"></div> -->
+              <!-- <img
                 src="assets/img/random-lines.svg"
                 alt=""
                 class="about__line"
-              />
+              /> -->
               <div class="about__box"></div>
             </div>
           </div>
@@ -156,19 +168,7 @@
               neuroscience, psychology, and global knowledge systems to redefine
               healing and human development.
             </p>
-
-            <ul class="about__list">
-              <li class="about__item">
-                <b>Founded by:</b> Dr. Letsoalo Montsheng (Dr. Mo) — Social
-                Neuroscientist, Trauma Specialist, and CA-SA Registered
-                Counselor.
-              </li>
-              <li class="about__item">
-                Recipient of the <b>Young Scientist Award</b> for Best Faculty
-                in Psychology, Dr. Mo’s vision unites rigorous science with
-                restorative practice.
-              </li>
-            </ul>
+        
 
             <div class="about__buttons">
               <a
@@ -190,6 +190,54 @@
           </div>
         </div>
       </section>
+
+      <!-- =========ABOUT============ -->
+
+      <div id="about" class="section-wrapper">
+        <!-- Heading -->
+        <div class="heading">
+          <h1>Meet Our Founder
+          </h1>
+          <span class="underline"></span>
+        </div>
+
+        <!-- Content Container -->
+        <div class="content">
+          <!-- Left Text Section -->
+          <div class="text-section">
+        <h2>Introducing Dr. Letsoalo Montsheng</h2>
+
+<p>
+  We are proud to introduce Dr. Letsoalo Montsheng, widely known as Dr. Mo — a Social Neuroscientist, 
+  Trauma Specialist, and CA-SA Registered Counselor. Dr. Mo brings a strong research background, 
+  with published work featured on the Social Science Research Network (SSRN), reflecting her commitment 
+  to advancing trauma-informed practice through evidence-based knowledge.
+</p>
+
+<p>
+  As the recipient of the Young Scientist Award for Best Faculty in Psychology, Dr. Mo continues to 
+  lead with a vision that blends rigorous scientific inquiry with compassionate, restorative methods. 
+  Her work inspires a new, holistic approach to healing, education, and human development.
+</p>
+
+            <!-- <button id="openModal" class="cta-btn">Read More</button> -->
+            <div class="about__buttons">
+              <a
+                href="https://traumaandneuro.setmore.com/drmo"
+                class="button"
+                target="_blank"
+              >
+                <i class="ri-calendar-line"></i> Book Counseling
+              </a>
+              </div>
+          </div>
+
+          <!-- Right Image Section -->
+          <div class="image-section">
+            <img src="assets/img/montsheng.jpg" alt="Executive" class="exec-img" />
+          </div>
+        </div>
+      </div>
 
       
       <!--==================== SERVICES ====================-->
@@ -311,6 +359,131 @@
         </div>
       </section>
 
+      <!--==================== Services ====================-->
+      <section class="projects section" id="services">
+        <h2 class="section__title-1">
+          <span>Services</span>
+        </h2>
+
+        <div class="projects__container container grid">
+          <article class="projects__card">
+            <div class="projects__content">
+              <h3 class="projects__subtitle">
+                Trauma Therapy & Neuroscience-Informed Interventions
+              </h3>
+              <h2 class="projects__title">
+                Healing, Reparenting & Emotional Recovery
+              </h2>
+              <p class="projects__description">
+                Helping individuals navigate, heal, and reparent through trauma
+                using evidence-based and neuroscience-informed approaches.
+              </p>
+            </div>
+          </article>
+
+          <article class="projects__card">
+            <div class="projects__content">
+              <h3 class="projects__subtitle">Counselling & Coaching</h3>
+              <h2 class="projects__title">
+                Personal, Couples & Family Support
+              </h2>
+              <p class="projects__description">
+                Personalized counselling and coaching to enhance mental health,
+                emotional resilience, and overall wellbeing. Includes emergency
+                interventions for urgent mental health support.
+              </p>
+            </div>
+          </article>
+
+          <article class="projects__card">
+            <div class="projects__content">
+              <h3 class="projects__subtitle">
+                Cognitive & Behavioral Coaching
+              </h3>
+              <h2 class="projects__title">ABA, CBT & Developmental Support</h2>
+              <p class="projects__description">
+                Applied Behavior Analysis (ABA), Cognitive Behavioral Therapy
+                (CBT) coaching, and personalized strategies for emotional
+                regulation, behavioral improvement, and personal growth.
+                Supports families with children with ADHD and other
+                developmental or behavioral challenges.
+              </p>
+            </div>
+          </article>
+
+          <article class="projects__card">
+            <div class="projects__content">
+              <h3 class="projects__subtitle">
+                Quantum Magnetic Resonance Analysis (QMRA)
+              </h3>
+              <h2 class="projects__title">
+                Holistic Health & Energy Assessment
+              </h2>
+              <p class="projects__description">
+                A non-invasive assessment tool analyzing the body’s
+                electromagnetic signals to detect imbalance, stress, and
+                dysfunction across physical, emotional, and cognitive systems,
+                guiding personalized healing and optimization.
+              </p>
+            </div>
+          </article>
+
+          <article class="projects__card">
+            <div class="projects__content">
+              <h3 class="projects__subtitle">Courses & Workshops</h3>
+              <h2 class="projects__title">Education for Healing & Growth</h2>
+              <p class="projects__description">
+                Workshops, programs, and masterclasses designed to equip
+                individuals and professionals with skills in mental health,
+                trauma healing, personal development, and wellness.
+              </p>
+            </div>
+          </article>
+
+          <article class="projects__card">
+            <div class="projects__content">
+              <h3 class="projects__subtitle">Corporate Programs</h3>
+              <h2 class="projects__title">
+                Workplace Wellness & Trauma-Informed Leadership
+              </h2>
+              <p class="projects__description">
+                Tailored mental health, wellness, and trauma-informed programs
+                to support organizational wellbeing, engagement, and
+                productivity.
+              </p>
+            </div>
+          </article>
+
+          <article class="projects__card">
+            <div class="projects__content">
+              <h3 class="projects__subtitle">
+                Family & Child Support Programs
+              </h3>
+              <h2 class="projects__title">Developmental & Emotional Support</h2>
+              <p class="projects__description">
+                Supporting families with children facing developmental,
+                emotional, or behavioral challenges through targeted programs,
+                coaching, and guidance.
+              </p>
+            </div>
+          </article>
+
+          <article class="projects__card">
+            <div class="projects__content">
+              <h3 class="projects__subtitle">Wellness & Healing Kits</h3>
+              <h2 class="projects__title">
+                Holistic Self-Care & Recovery Tools
+              </h2>
+              <p class="projects__description">
+                Home-delivered, neuroscience-informed kits designed to support
+                mental, emotional, and physical wellbeing through holistic
+                self-care and recovery practices.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
       <!--==================== CONTACT ====================-->
       <section class="contact section" id="contact">
         <div class="contact__container grid">
@@ -336,7 +509,7 @@
               >
             </p>
 
-            <div class="geometric-box"></div>
+            <!-- <div class="geometric-box"></div> -->
           </div>
 
           <div class="contact__mail">
@@ -401,11 +574,11 @@
           </div>
 
           <div class="contact__social">
-            <img
+            <!-- <img
               src="assets/img/curved-arrow.svg"
               alt=""
               class="contact__social-arrow"
-            />
+            /> -->
 
             <div class="contact__social-data">
               <div>
@@ -451,12 +624,16 @@
     <!-- <a href="#" class="scrollup" id="scroll-up">
          <i class="ri-arrow-up-s-line"></i>
       </a> -->
-        <!-- 
+    <!-- 
     - #BACK TO TOP
   -->
-<a href="https://api.whatsapp.com/send?phone=27797570393&text=Hello.%20I%20would%20like%20to%20know%20more%20about%Trauma%20Neuro." class="float" target="_blank">
-<i class="fa fa-whatsapp my-float"></i>
-</a>
+    <a
+      href="https://api.whatsapp.com/send?phone=27797570393&text=Hello.%20I%20would%20like%20to%20know%20more%20about%Trauma%20Neuro."
+      class="float"
+      target="_blank"
+    >
+      <i class="fa fa-whatsapp my-float"></i>
+    </a>
 
     <script src="assets/js/scrollreveal.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
